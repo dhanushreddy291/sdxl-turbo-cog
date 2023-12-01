@@ -1,0 +1,12 @@
+# Configuration for Cog
+build:
+  gpu: true
+  python_version: "3.10"
+  python_packages:
+    - "torch==2.0.0"
+    - "diffusers==0.24.0"
+    - "transformers==4.35.2"
+    - "accelerate==0.25.0"
+
+# predict.py defines how predictions are run on your model
+predict: "predict.py:Predictor"
