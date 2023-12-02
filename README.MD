@@ -8,13 +8,13 @@ First, download the pre-trained weights:
 
 Then, you can run predictions:
 
-    cog predict -i prompt="A beautiful brunette pilot girl, beautiful, moody lighting, best quality, full body portrait, real picture, intricate details, depth of field, in a cold snowstorm, , Fujifilm XT3, outdoors, bright day, Beautiful lighting, RAW photo, 8k uhd, film grain, unreal engine 5, ray travig"
+    cog predict -i prompt="21 years old girl,short cut,beauty,dusk,Ghibli style illustration"
 
 ## Example:
 
-"A beautiful brunette pilot girl, beautiful, moody lighting, best quality, full body portrait, real picture, intricate details, depth of field, in a cold snowstorm, , Fujifilm XT3, outdoors, bright day, Beautiful lighting, RAW photo, 8k uhd, film grain, unreal engine 5, ray travig"
+"21 years old girl,short cut,beauty,dusk,Ghibli style illustration"
 
-![A beautiful brunette pilot girl, beautiful, moody lighting, best quality, full body portrait, real picture, intricate details, depth of field, in a cold snowstorm, , Fujifilm XT3, outdoors, bright day, Beautiful lighting, RAW photo, 8k uhd, film grain, unreal engine 5, ray travig](out-0.png)
+![21 years old girl,short cut,beauty,dusk,Ghibli style illustration](out-0.png)
 
 # Note:
 The model is intended for research purposes only. Possible research areas and tasks include

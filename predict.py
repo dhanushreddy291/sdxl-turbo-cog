@@ -21,7 +21,7 @@ class Predictor(BasePredictor):
         self,
         prompt: str = Input(
             description="Input prompt",
-            default="A beautiful brunette pilot girl, beautiful, moody lighting, best quality, full body portrait, real picture, intricate details, depth of field, in a cold snowstorm, , Fujifilm XT3, outdoors, bright day, Beautiful lighting, RAW photo, 8k uhd, film grain, unreal engine 5, ray travig"
+            default="21 years old girl,short cut,beauty,dusk,Ghibli style illustration"
         ),
         negative_prompt: str = Input(
             description="Input Negative Prompt",
@@ -32,6 +32,10 @@ class Predictor(BasePredictor):
             ge=1,
             le=4,
             default=1,
+        ),
+        num_inference_steps: int = Input(
+            description="Number of inference steps",
+            ge=1, le=4, default=1,
         ),
         seed: int = Input(
             description="Random seed. Leave blank to randomize the seed", default=None
@@ -48,7 +52,7 @@ class Predictor(BasePredictor):
             "negative_prompt": [negative_prompt] * num_outputs,
             "guidance_scale": 0,
             "generator": generator,
-            "num_inference_steps": 1,
+            "num_inference_steps": num_inference_steps,
         }
 
         output = self.pipe(**common_args)

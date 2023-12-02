@@ -161,3 +161,6 @@ cython_debug/
 
 # Model Cache
 model-cache/
+
+# Cog
+.cog/
